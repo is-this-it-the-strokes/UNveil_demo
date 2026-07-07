@@ -249,7 +249,7 @@ const ORDER = ['germany','usa','uk','australia','netherlands','canada','france',
   'colombia','sweden','india','denmark','norway','italy'];
 
 function drawTaegeuk(g,cx,cy,r){
-  g.save(); g.translate(cx,cy); g.rotate(-Math.PI*0.187 + Math.PI/2);
+  g.save(); g.translate(cx,cy); g.rotate(-Math.PI*0.187 + Math.PI/3);
   g.fillStyle='#cd2e3a'; g.beginPath(); g.arc(0,0,r,0,7); g.fill();
   g.fillStyle='#0047a0'; g.beginPath(); g.arc(0,0,r,0,Math.PI); g.fill();
   g.fillStyle='#cd2e3a'; g.beginPath(); g.arc(-r/2,0,r/2,0,7); g.fill();
@@ -291,7 +291,7 @@ function buildDecalTexture(){
 
   // 중앙 태극 + 4괘
   drawTaegeuk(g,cx,cy,40);
-  const rt=185, bw=100, bh=16, gp=10;
+  const rt=83, bw=44, bh=7, gp=4;
   drawTrigram(g, cx-rt*0.72, cy-rt*0.72, -Math.PI/4, [1,1,1], bw,bh,gp); // 건 (좌상)
   drawTrigram(g, cx+rt*0.72, cy-rt*0.72,  Math.PI/4, [0,1,0], bw,bh,gp); // 감 (우상)
   drawTrigram(g, cx-rt*0.72, cy+rt*0.72,  Math.PI/4, [1,0,1], bw,bh,gp); // 리 (좌하)
