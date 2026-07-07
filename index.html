@@ -249,7 +249,7 @@ const ORDER = ['germany','usa','uk','australia','netherlands','canada','france',
   'colombia','sweden','india','denmark','norway','italy'];
 
 function drawTaegeuk(g,cx,cy,r){
-  g.save(); g.translate(cx,cy); g.rotate(-Math.PI*0.187 - Math.PI/3);
+  g.save(); g.translate(cx,cy); g.rotate(-Math.PI*0.187 + Math.PI/2);
   g.fillStyle='#cd2e3a'; g.beginPath(); g.arc(0,0,r,0,7); g.fill();
   g.fillStyle='#0047a0'; g.beginPath(); g.arc(0,0,r,0,Math.PI); g.fill();
   g.fillStyle='#cd2e3a'; g.beginPath(); g.arc(-r/2,0,r/2,0,7); g.fill();
